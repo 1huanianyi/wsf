@@ -1,0 +1,31 @@
+{
+    "name":"完本神站",
+    "url":"www.xinwanben.com",
+    "version":100,
+    "search": {
+        "url":"https://m.xinwanben.com/s.php@post->keyword=${key}",
+        "list":".listBottom>ul>a",
+        "name":"h4",
+        "author":"h5",
+        "cover":"img",
+        "detail":"${a}/@replace->m.xin->www.xin"
+    },
+    "detail": {
+        "name":"meta[property=og:novel:book_name]@attr->content",
+        "author":"meta[property=og:novel:author]@attr->content",
+        "cover":"meta[property=og:image]@attr->content",
+        "summary":"meta[property=og:description]@attr->content",
+        "status":"meta[property=og:novel:status]@attr->content",
+        "update":"meta[property=og:novel:update_time]@attr->content",
+        "lastChapter":"meta[property=og:novel:lastest_chapter_name]@attr->content",
+        "catalog":""
+    },
+    "catalog": {
+        "list":".chapter>ul>li",
+        "name":"a",
+        "chapter":"a"
+    },
+    "chapter": {
+        "content":".raderCon"
+    }
+}
