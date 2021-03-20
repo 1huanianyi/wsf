@@ -6,12 +6,10 @@
         "url": "http://www.shouda8.com/search.html?@post->searchkey=${key}",
         "charset": "utf-8",
         "list": "#alistbox ",
-        // "name": "h2 > a",
-        "name":"div.info > div.title > h2 > a",
-        // "author": "span > a",
-        "author":"div.info >div.title > span > a",
-        "cover": "div.pic > a > img",
-        "detail": "div.info > div.title > h2 > a"
+        "name":"div.info>div.title>h2>a",
+        "author":"div.info>div.title>span>a",
+        "cover": "div.pic>a>img",
+        "detail": "div.info>div.title>h2>a"
     },
     "detail": {
         "name":"meta[property=og:novel:book_name]@attr->content",
@@ -24,15 +22,15 @@
         "catalog":""
     },
      "catalog": {
-        "list": "div.link_14 > dl:nth-child(n+2)",
+        "list": "div.link_14>dl:nth-child(n+2)",
         "booklet": {
-            "name": "dt > b",
+            "name": "dt>b",
             "list": "dd"
         },
         "name": "a",
         "chapter": "a"
      },
     "chapter": {    
-        "content": "#content"
+        "content": "#content>p"
     }
 }
