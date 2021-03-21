@@ -26,6 +26,6 @@
         "chapter":"a"
     },
     "chapter": {
-        "content":".raderCon"
+        "content":".raderCon>p"
     }
 }
