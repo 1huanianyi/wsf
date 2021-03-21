@@ -18,7 +18,7 @@
         "status":"meta[property=og:novel:status]@attr->content",
         "update":"meta[property=og:novel:update_time]@attr->content",
         "lastChapter":"meta[property=og:novel:lastest_chapter_name]@attr->content",
-        "catalog":""
+        "catalog":"a.more"
     },
     "catalog": {
         "list": ".read>dl>dd",
