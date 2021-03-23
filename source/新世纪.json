@@ -26,6 +26,8 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": "#content"
+        "content": "#content",
+        "purify":["http.*?html",
+                 "天才一秒记住本站地址：www.2100xs.com。新世纪小说网手机版阅读网址：m.2100xs.com"]
     }
 }
