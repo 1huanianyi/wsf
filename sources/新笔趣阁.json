@@ -1,0 +1,30 @@
+{
+    "name": "新笔趣阁",
+    "url": "www.xbiquge.la",
+    "version": 100,
+    "search": {
+        "url": "http://www.xbiquge.la/modules/article/waps.php@post->searchkey=${key}",
+        "list": "tbody>tr:nth-child(n+2)",
+        "name": "td:nth-child(1)>a",
+        "author": "td:nth-child(3)",
+        "detail": "td:nth-child(1)>a"
+    },
+    "detail": {
+        "name":"meta[property=og:novel:book_name]@attr->content",
+        "author":"meta[property=og:novel:author]@attr->content",
+        "cover":"meta[property=og:image]@attr->content",
+        "summary":"meta[property=og:description]@attr->content",
+        "status":"meta[property=og:novel:status]@attr->content",
+        "update":"meta[property=og:novel:update_time]@attr->content",
+        "lastChapter":"meta[property=og:novel:lastest_chapter_name]@attr->content",
+        "catalog":""
+    },
+    "catalog": {
+        "list": "dl>dd",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}
