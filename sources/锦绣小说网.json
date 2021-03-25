@@ -26,6 +26,9 @@
         "chapter": "a"
     },
     "chapter": {
-        "content": "#content>p"
+        "content": "#content",
+        "page": "#content>p.to_nextpage>a:matches(
+本章未完，点击下一页继续阅读)",
+        "purify":["-->>","本章未完，点击下一页继续阅读","锦绣文学 www.580bk.com，最快更新最新章节！"]
     }
 }
