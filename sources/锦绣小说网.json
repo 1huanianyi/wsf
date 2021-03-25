@@ -1,15 +1,14 @@
 {
     "name": "锦绣小说网",
-    "url": "www.580bk.com/",
+    "url": "www.580bk.com",
     "version": 100,
     "search": {
         "url": "https://www.580bk.com/home/search@post->action=search&q=${key}",
         "charest": "utf-8",
         "list": ".lll>ul>li",
         "name": "a>h3",
-        "author": "",
         "cover": "img",
-        "detail": "a>h3"
+        "detail": "${a}/@replace->eee.5->w.5"
     },
     "detail": {
         "name":"meta[property=og:novel:book_name]@attr->content",
