@@ -4,7 +4,8 @@
     "version": 100,
     "search": {
         "url": "https://www.580bk.com/home/search@post->action=search&q=${key}",
-        "list": "#hotcontent>div>ul>li",
+        "charest":"utf-8"
+        "list": ".lll>ul>li",
         "name": "a>h3",
         "author": "",
         "cover": "img",
