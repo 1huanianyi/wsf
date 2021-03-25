@@ -1,0 +1,31 @@
+{
+    "name": "锦绣小说网",
+    "url": "www.580bk.com/",
+    "version": 100,
+    "search": {
+        "url": "https://www.580bk.com/home/search@post->action=search&q=${key}",
+        "list": "#hotcontent>div>ul>li",
+        "name": "a>h3",
+        "author": "",
+        "cover": "img",
+        "detail": "a>h3"
+    },
+    "detail": {
+        "name":"meta[property=og:novel:book_name]@attr->content",
+        "author":"meta[property=og:novel:author]@attr->content",
+        "cover":"meta[property=og:image]@attr->content",
+        "summary":"meta[property=og:description]@attr->content",
+        "status":"meta[property=og:novel:status]@attr->content",
+        "update":"meta[property=og:novel:update_time]@attr->content",
+        "lastChapter":"meta[property=og:novel:lastest_chapter_name]@attr->content",
+        "catalog":""
+    },
+    "catalog": {
+        "list": "#list>dl>dd:nth-child(n+13)",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content>p"
+    }
+}
