@@ -1,0 +1,24 @@
+{
+    "name": "一品侠",
+    "url": "www.yipinxia.net/",
+    "version": 100,
+    "search": {
+        "url": "http://www.yipinxia.net/modules/article/search.php?searchkey=${key}",
+        "list": " table>tbody>tr:nth-child(n+2)",
+        "name": "td:nth-child(1)>a",
+        "author": "td:nth-child(3)",
+        "cover": "",
+        "detail": "{$a}/@"
+    },
+    "detail": {
+        "catalog":"a.readnow"
+    },
+    "catalog": {
+        "list": ".list>ul>li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#booktext"
+    }
+}
