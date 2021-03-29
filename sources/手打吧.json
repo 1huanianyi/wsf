@@ -1,15 +1,16 @@
 {
     "name": "手打吧",
     "url": "www.shouda8.com",
-    "version": 100,
+    "version": 101,
     "search": {
-        "url": "http://www.shouda8.com/search.html?@post->searchkey=${key}",
+        "url": "http://www.shouda8.com/search.html@post->searchkey=${key}",
         "charset": "utf-8",
         "list": "#alistbox ",
-        "name":"div.info>div.title>h2>a",
-        "author":"div.info>div.title>span>a",
-        "cover": "div.pic>a>img",
-        "detail": "div.info>div.title>h2>a"
+        "summary":".intro",
+        "name":"h2>a",
+        "author":".title>span>a",
+        "cover": "img",
+        "detail": "a"
     },
     "detail": {
         "name":"meta[property=og:novel:book_name]@attr->content",
@@ -22,7 +23,7 @@
         "catalog":""
     },
      "catalog": {
-        "list": "div.link_14>dl:nth-child(n+2)",
+        "list": ".link_14>dl,
         "booklet": {
             "name": "dt>b",
             "list": "dd"
