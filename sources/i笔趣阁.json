@@ -1,0 +1,48 @@
+{
+    "catalog": {
+        "chapter": "a",
+        "list": "#list > dl > dd",
+        "name": "a",
+        "orderBy": 0,
+        "page": ""
+    },
+    "chapter": {
+        "buy": "",
+        "content": "#content",
+        "filter": [
+            "@p",
+            "@a"
+        ],
+        "page": "",
+        "purify": [
+            "报送后维护人员会在两分钟内校正章节内容,请耐心等待。"
+        ],
+        "subscribe": "",
+        "vip": ""
+    },
+    "detail": {
+        "author": "meta[property=og:novel:author]@attr->content",
+        "catalog": "",
+        "category": "",
+        "cover": "meta[property=og:image]@attr->content",
+        "lastChapter": "#info > p:nth-child(5) > a",
+        "name": "meta[property=og:book_name]@attr->content",
+        "status": "",
+        "summary": "#intro",
+        "update": "#info > p:nth-child(4)",
+        "words": ""
+    },
+    "name": "i笔趣阁",
+    "search": {
+        "author": ".s4.wid > a",
+        "charset": "utf-8",
+        "cover": "",
+        "detail": ".s2.wid > a",
+        "list": "div.novelslist2 > ul > li",
+        "name": ".s2.wid > a",
+        "summary": "",
+        "url": "https://www.ibiquge.net/search.html?name=${key}"
+    },
+    "url": "www.ibiquge.net",
+    "version": 100
+}

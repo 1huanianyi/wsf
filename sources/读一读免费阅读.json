@@ -1,0 +1,45 @@
+{
+    "catalog": {
+        "chapter": "a",
+        "list": "#chapters-list > li:nth-child(n+2)",
+        "name": "a",
+        "orderBy": 0,
+        "page": ""
+    },
+    "chapter": {
+        "buy": "",
+        "content": "#txtContent",
+        "filter": [
+            "@script"
+        ],
+        "page": "",
+        "purify": [],
+        "subscribe": "",
+        "vip": ""
+    },
+    "detail": {
+        "author": "meta[property=og:novel:author]@attr->content",
+        "catalog": "li.col-xs-12.list-group-item.no-border.tac > a.btn.btn-danger",
+        "category": "",
+        "cover": "meta[property=og:image]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "status": "li.col-xs-4:nth-child(3)",
+        "summary": "#all",
+        "update": "li.col-xs-4:nth-child(4)@replace->更新时间：->",
+        "words": ""
+    },
+    "name": "读一读免费阅读",
+    "search": {
+        "author": ".col-xs-2:nth-child(4)",
+        "charset": "utf-8",
+        "cover": "",
+        "detail": ".col-xs-3>a",
+        "list": "#novel-list > ul > li.list-group-item.clearfix:nth-child(n+2)",
+        "name": ".col-xs-3 > a",
+        "summary": "",
+        "url": "http://du1du.org/search.htm?keyword=${key}"
+    },
+    "url": "du1du.org",
+    "version": 101
+}
